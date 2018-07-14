@@ -24,7 +24,7 @@ production:
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 10 } %>
   timeout: 5000
-  database: db/production.postgresql
+  database: db/production
 
 cucumber:
   <<: *test

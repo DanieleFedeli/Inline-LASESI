@@ -18,6 +18,7 @@ class CreateRooms < ActiveRecord::Migration[5.2]
       t.text      :recurrence
       t.string    :event_id
       
+      t.string    :hash_id, index: true
       t.belongs_to :user
       t.timestamps
     end
